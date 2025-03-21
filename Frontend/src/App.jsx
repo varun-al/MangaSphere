@@ -4,6 +4,7 @@ import MangaDetailsPage from "./pages/MangaDetailsPage";
 import BrowsePage from "./pages/BrowsePage";
 import ReaderPage from "./pages/ReaderPage";
 import AuthPage from "./pages/AuthPage";
+import ProfilePage from "./pages/ProfilePage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/browse" element={<BrowsePage />} />
           <Route path="/manga/:mangaId/chapter/:chapterNumber" element={<ReaderPage />} />
           <Route path="/auth" element={<AuthPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
         </Routes>
       </div>
     </Router>

@@ -38,10 +38,10 @@ const Navbar = ({ position = "fixed", hideSearch = false }) => {
               <i className="ti ti-search text-white" aria-hidden="true" />
             </button>
           )}
-          <Link to="/auth">
-            <button className="px-4 py-2 text-sm font-medium leading-5 text-white bg-indigo-700 rounded">
-              Sign In
-            </button>
+          <Link to="/profile">
+            <div className="flex items-center justify-center w-[40px] h-[40px] rounded-full border-2 border-indigo-700 bg-indigo-700">
+              <span className="text-white text-sm font-medium">MR</span>
+            </div>
           </Link>
         </div>
       </nav>
