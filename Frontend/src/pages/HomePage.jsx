@@ -13,7 +13,7 @@ const HomePage = () => {
         rel="stylesheet"
       />
       <main className="min-h-screen text-white bg-black pt-[70px]">
-        <Navbar />
+        <Navbar position="fixed" />
         <HeroSection />
         <TrendingSection />
         <LatestUpdatesSection />
