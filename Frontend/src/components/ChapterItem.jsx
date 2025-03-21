@@ -1,6 +1,13 @@
 "use client";
+import { useNavigate } from "react-router-dom";
 
-const ChapterItem = ({ title, date, views, isRead }) => {
+const ChapterItem = ({ title, date, views, isRead, mangaId, chapterNumber }) => {
+  const navigate = useNavigate();
+
+  const handleRead = () => {
+    navigate(`/manga/${mangaId}/chapter/${chapterNumber}`);
+  };
+
   return (
     <article className="p-4 rounded-lg bg-neutral-900 max-sm:p-3">
       <div className="flex justify-between items-center">
@@ -13,7 +20,10 @@ const ChapterItem = ({ title, date, views, isRead }) => {
             <span>{views} views</span>
           </div>
         </div>
-        <button className="px-4 py-2 text-sm font-medium text-white bg-indigo-700 rounded">
+        <button
+          className="px-4 py-2 text-sm font-medium text-white bg-indigo-700 rounded"
+          onClick={handleRead}
+        >
           {isRead ? "Re-read" : "Read"}
         </button>
       </div>
