@@ -1,5 +1,8 @@
+import { Link } from "react-router-dom";
+
 const MangaCard = ({ title, rating, genres, imageUrl }) => {
-    return (
+  return (
+    <Link to={`/manga/${title.toLowerCase().replace(/\s+/g, "-")}`}>
       <article className="overflow-hidden rounded-lg">
         <div
           className="bg-cover h-[400px]"
@@ -24,7 +27,8 @@ const MangaCard = ({ title, rating, genres, imageUrl }) => {
           </div>
         </div>
       </article>
-    );
-  };
-  
-  export default MangaCard;
+    </Link>
+  );
+};
+
+export default MangaCard;

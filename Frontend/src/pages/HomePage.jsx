@@ -12,7 +12,7 @@ const HomePage = () => {
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
         rel="stylesheet"
       />
-      <main className="min-h-screen text-white bg-black">
+      <main className="min-h-screen text-white bg-black pt-[70px]">
         <Navbar />
         <HeroSection />
         <TrendingSection />

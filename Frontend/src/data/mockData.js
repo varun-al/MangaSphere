@@ -1,3 +1,4 @@
+// Existing data from homepage
 export const trendingManga = [
     {
       title: "One Piece",
@@ -73,5 +74,60 @@ export const trendingManga = [
       title: "Award Winners",
       description: "Best rated manga of the year",
       imageUrl: "https://placehold.co/398x200/40FF40/40FF40",
+    },
+  ];
+  
+  // New data for MangaDetailsPage
+  export const chapters = [
+    {
+      title: "Chapter 139: Toward the Tree on That Hill",
+      date: "Apr 9, 2021",
+      views: "5.2M",
+      isRead: true,
+    },
+    {
+      title: "Chapter 138: A Long Dream",
+      date: "Mar 9, 2021",
+      views: "4.8M",
+      isRead: true,
+    },
+    {
+      title: "Chapter 137: Titans",
+      date: "Feb 9, 2021",
+      views: "4.5M",
+      isRead: false,
+    },
+    {
+      title: "Chapter 136: Devote Your Hearts",
+      date: "Jan 9, 2021",
+      views: "4.2M",
+      isRead: false,
+    },
+    {
+      title: "Chapter 135: Battle of Heaven and Earth",
+      date: "Dec 9, 2020",
+      views: "4.1M",
+      isRead: false,
+    },
+  ];
+  
+  export const similarManga = [
+    {
+      title: "Vinland Saga",
+      rating: "4.8",
+      imageUrl:
+        "https://cdn.builder.io/api/v1/image/assets/TEMP/d606305d1d24aaa77490b14c211cd120ceec2999",
+    },
+    {
+      title: "Kingdom",
+      rating: "4.7",
+      imageUrl:
+        "https://cdn.builder.io/api/v1/image/assets/TEMP/fc7ba5f7268a5bf616809222efe3c49fee65addb",
+    },
+    {
+      title: "Berserk",
+      rating: "4.9",
+      imageUrl:
+        "https://cdn.builder.io/api/v1/image/assets/TEMP/01bdfbb140fc0bbad14035a38dab33d681a3d31b",
     },
   ];
